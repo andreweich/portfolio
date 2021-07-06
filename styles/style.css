@@ -236,18 +236,19 @@ html {
 }
 
 html {
-  font-size: 62.5;
+  font-size: 62.5%;
 }
 
 body {
-  background: #000;
+  background: #121212;
   color: #fff;
+  opacity: 90%;
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   width: 85%;
   margin: 0 auto;
 }
@@ -261,6 +262,10 @@ p,
 form {
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  font-size: 4rem;
 }
 
 ul {
@@ -283,14 +288,19 @@ h3 {
   font-family: "Helvetica Neue", sans-serif;
 }
 
+.head-container {
+  background: #171717;
+  border: 8px solid white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
 header {
-  border-right: 5px solid #fff;
-  border-left: 5px solid #fff;
-  height: 100vh;
+  height: 90vh;
 }
 
 .flex-head {
-  height: 90vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,7 +315,7 @@ header {
 }
 .flex-head h1 {
   width: 65%;
-  font-size: 8rem;
+  font-size: 10rem;
 }
 
 .socials {
@@ -319,40 +329,41 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 20px;
+  font-size: 2.5rem;
 }
 
 .linked {
-  background: #ff6319;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  background: #ee352e;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   border-radius: 50%;
   text-align: center;
 }
 
 .tweet {
-  background: #0039a6;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  background: #00933c;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   border-radius: 50%;
   text-align: center;
 }
 
 .git {
-  background: #00933c;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  background: #0039a6;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   border-radius: 50%;
   text-align: center;
 }
 
-.insta {
+.mail {
   background: #00add0;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   border-radius: 50%;
   text-align: center;
 }
@@ -367,9 +378,9 @@ header {
   text-decoration: none;
   border: none;
   color: #fff;
-  font-size: 2rem;
+  font-size: 3rem;
   cursor: pointer;
-  background: #ee352e;
+  background: #ff6319;
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -423,4 +434,192 @@ header {
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
+}
+.main-container {
+  margin-top: 100px;
+  background: #171717;
+  border-radius: 10px;
+  border: 8px solid white;
+}
+
+.navbar {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.navbar li {
+  border: 2px solid transparent;
+  padding-bottom: 3px;
+}
+.navbar li:hover, .navbar li:focus-within {
+  border-bottom: 2px solid #ff6319;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 200px;
+  height: 90vh;
+}
+
+.shred {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.shred img {
+  width: 20%;
+  color: #fff;
+}
+
+.mugshot {
+  width: 50%;
+  height: 200px;
+  margin: 20px;
+}
+
+.about-me {
+  width: 50%;
+  line-height: 1.5;
+  margin: 20px;
+  padding-bottom: 200px;
+}
+.about-me h2 {
+  margin-bottom: 20px;
+}
+
+.skills {
+  padding-top: 40px;
+  width: 60%;
+  margin: 0 auto;
+  border: 8px solid #fff;
+  border-radius: 30px;
+}
+.skills h2 {
+  text-align: center;
+}
+
+.skills ul {
+  max-width: 600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 5rem;
+  padding: 20px 0 30px;
+}
+.skills ul li {
+  margin: 20px;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.html {
+  background: #ee352e;
+}
+
+.css {
+  background: #00add0;
+}
+
+.js {
+  background: #b933ad;
+}
+
+.react {
+  background: #808183;
+}
+
+.jquery {
+  background: #fccc0a;
+}
+
+.sass {
+  background: #0039a6;
+}
+
+.git-hub {
+  background: #6cbe45;
+}
+
+.firebase {
+  background: #996633;
+}
+
+.work {
+  padding-top: 150px;
+}
+.work h2 {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px 500px 500px;
+}
+
+.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.display div {
+  width: 65%;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+
+.screen-1 {
+  background: #00add0;
+}
+
+.screen-2 {
+  background: #ee352e;
+}
+
+.screen-3 {
+  background: #0039a6;
 }

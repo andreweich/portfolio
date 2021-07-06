@@ -1,0 +1,171 @@
+.main-container {
+    margin-top: 100px;
+    background: lighten($black, 2%);
+    border-radius: 10px;
+    border: 8px solid lighten(#fff, 2%);
+}
+
+
+.navbar {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+
+    li {
+        border: 2px solid transparent;
+        padding-bottom: 3px;
+        &:hover,
+        &:focus-within {
+            border-bottom: 2px solid $orange;
+            transition: all 0.2s ease-in;
+        } 
+    } 
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+    height: 90vh;
+}
+
+.shred {
+    display: flex;
+    
+
+    img {
+        width: 20%;
+        color: #fff;
+    }
+}
+
+.mugshot {
+    width: 50%;
+    height: 200px;
+    margin: 20px
+}
+
+.about-me {
+    width: 50%;
+    line-height: 1.5;
+    margin: 20px;
+    padding-bottom: 200px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.skills {
+    padding-top: 40px;
+    width: 60%;
+    margin: 0 auto;
+    border: 8px solid #fff;
+    border-radius: 30px;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.skills ul {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 5rem;
+    padding: 20px 0 30px;
+    
+
+    li {
+        margin: 20px;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.html {
+    background: $red;
+}
+
+.css {
+    background: $light-blue;
+}
+
+.js {
+    background: $purple;
+}
+
+.react {
+    background: $dark-grey;
+}
+
+.jquery {
+    background: $yellow;
+}
+
+.sass {
+    background: $blue;
+}
+
+.git-hub {
+    background: $lime;
+}
+
+.firebase {
+    background: $brown;
+}
+
+.work {
+    padding-top: 150px;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+}
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px 500px;
+}
+
+// .description {
+//     background: $dark-grey;
+// }
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 65%;
+        border: 5px solid #fff;
+        border-radius: 10px;
+    }
+}
+
+
+.screen-1 {
+    background: $light-blue;
+}
+
+.screen-2 {
+    background: $red;
+}
+
+.screen-3 {
+    background: $blue;
+}

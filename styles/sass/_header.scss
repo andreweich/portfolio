@@ -1,10 +1,16 @@
-header {
-    border-right: 5px solid #fff;
-    border-left: 5px solid #fff;
-    height: 100vh;
+.head-container {
+    background: lighten($black, 2%);
+    border: 8px solid lighten(#fff, 2%);
+    border-radius: 10px;
+    margin-top: 20px;
 }
-.flex-head {
+
+header {
     height: 90vh;
+}
+
+.flex-head {
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,53 +18,54 @@ header {
 
     h1 {
         width: 65%;
-        font-size: 8rem;
-        // width: 30%;
+        font-size: 10rem;
     }
 }
 
 .socials {
     margin-top: 120px;
 }
+
 .socials ul {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+    font-size: 2.5rem;
 }
 
 
 .linked {
-    background: $orange;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    background: $red;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     border-radius: 50%;
     text-align: center;
 }
 
 .tweet {
-    background: $blue;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    background: $green;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     border-radius: 50%;
     text-align: center;
 }
 
 .git {
-    background: $green;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    background: $blue;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     border-radius: 50%;
     text-align: center;
 }
 
-.insta {
+.mail {
     background: $light-blue;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
     border-radius: 50%;
     text-align: center;
 }
@@ -71,9 +78,9 @@ header {
     text-decoration: none;
     border: none;
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: pointer;
-    background: $red;
+    background: $orange;
     width: 60px;
     height: 60px;
     line-height: 60px;
