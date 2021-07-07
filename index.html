@@ -27,7 +27,7 @@
                                     <a href="https://www.linkedin.com/in/andreweichinger/"><i class="fab fa-linkedin-in" title="Linkedin icon and link"></i></a>
                                 </li>
                                 <li class="git">
-                                    <a href="https://github.com/andreweich"><i class="fab fa-github" title="Github icon and link"></i></a>
+                                    <a href="https://github.com/andreweich"><i class="fab fa-github" title="GitHub icon and link"></i></a>
                                 </li>
                                 <li class="tweet">
                                     <a href="https://twitter.com/andreweichinger"><i class="fab fa-twitter" title="Twitter icon and link"></i></a>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="scroll">
                         <button>
-                            <i class="fas fa-arrow-down"></i>
+                            <i class="fas fa-arrow-down" title="Down arrow"></i>
                         </button>
                     </div>
                 </div>
@@ -75,9 +75,9 @@
 
                 <section id="about">
                     <div class=" about-container wrapper">
-                        <div class="mugshot">
+                        <figure class="mugshot">
                             <img src="https://placekeanu.com/200/150" alt="">
-                        </div>
+                        </figure>
                         <div class="about-me">
                             <h2>About Me</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde harum ex officia velit, repellat iure quibusdam tempore dolore, dolor nihil iste incidunt eaque architecto cum tenetur repudiandae adipisci nam perspiciatis, nulla rerum porro doloremque nesciunt. Nisi est similique maiores exercitationem! Repellendus unde ipsam minima, natus eligendi et sint optio?</p>
@@ -87,8 +87,8 @@
                 
                 <!-- Skills Section -->
 
-                <section id="skills">
-                    <div class="skills">
+                <section id="skills" class="skills">
+                    <div class="skills-container">
                         <h2>Skills</h2>
                         <ul>
                             <li class="html">
@@ -110,7 +110,7 @@
                                 <i class="devicon-sass-original" title="Sass"></i>
                             </li>
                             <li class="github">
-                                <i class="devicon-github-original" title="Github"></i>
+                                <i class="devicon-github-original" title="GitHub"></i>
                             </li>
                             <li class="firebase">
                                 <i class="devicon-firebase-plain" title="Firebase"></i>
@@ -123,7 +123,7 @@
 
                 <section id="work" class="work">
                     <h2> Work </h2>
-                    <div class="projects">
+                    <div class="projects wrapper">
                         <div class="description">
                             <h3>Daily Crypto Updates</h3>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur rerum distinctio ex itaque et eligendi rem quae totam, quos dignissimos atque possimus nisi, laboriosam non iure minus! Ratione, ullam minus!</p>
@@ -132,7 +132,7 @@
                                 <li class="css-2"><i class="devicon-css3-plain" title="CSS3"></i></li>
                                 <li class="sass-2"><i class="devicon-sass-original" title="Sass"></i></li>
                                 <li class="js-2"><i class="devicon-javascript-plain" title="JavaScript"></i></li>
-                                <li class="github-2"><i class="devicon-github-original" title="Github"></i></li>
+                                <li class="github-2"><i class="devicon-github-original" title="GitHub"></i></li>
                                 <li class="mobile"><i class="fas fa-mobile-alt" title="Responsive"></i></li>
                             </ul>
                             <div class="links">
@@ -141,14 +141,14 @@
                             </div>
                         </div>
                         <div class="display screen-1">
-                            <div class="crypto">
+                            <figure>
                                 <img src="./assets/crypto.png" alt="Screen grab from Daily Crypto Updates">
-                            </div>
+                            </figure>
                         </div>
                         <div class="display screen-2">
-                            <div class="book">
+                            <figure>
                                 <img src="./assets/book-2.png" alt="Screen grab from Is The Book Better?.">
-                            </div>
+                            </figure>
                         </div>
                         <div class="description">
                             <h3>Is The Book Better?</h3>
@@ -157,7 +157,7 @@
                                 <li class="html-2"><i class="devicon-html5-plain" title="HTML5"></i></li>
                                 <li class="css-2"><i class="devicon-css3-plain" title="CSS3"></i></li>
                                 <li class="react-2"><i class="devicon-react-original" title="React"></i></li>
-                                <li class="github-2"><i class="devicon-github-original" title="Github"></i></li>
+                                <li class="github-2"><i class="devicon-github-original" title="GitHub"></i></li>
                                 <li class="mobile"><i class="fas fa-mobile-alt" title="Responsive"></i></li>
                             </ul>
                             <div class="links">
@@ -173,7 +173,7 @@
                                 <li class="css-2"><i class="devicon-css3-plain" title="CSS3"></i></li>
                                 <li class="react-2"><i class="devicon-react-original" title="React"></i></li>
                                 <li class="firebase-2"><i class="devicon-firebase-plain" title="Firebase"></i></li>
-                                <li class="github-2"><i class="devicon-github-original" title="Github"></i></li>
+                                <li class="github-2"><i class="devicon-github-original" title="GitHub"></i></li>
                                 <li class="mobile"><i class="fas fa-mobile-alt" title="Responsive"></i></li>
                             </ul>
                             <div class="links">
@@ -182,44 +182,63 @@
                             </div>
                         </div>
                         <div class="display screen-3">
-                            <div class="gift">
+                            <figure>
                                 <img src="./assets/gift.png" alt="Screen grab from gift shop.">
-                            </div>
+                            </figure>
                         </div>
                     </div>
                 </section>
 
                 <!-- Contact Section -->
 
-                <section id="contact" class="contact-container">
-                    <div class="about-container wrapper">
-                        <div class="mugshot">
-                            <img src="https://placekeanu.com/200/150" alt="">
+                <section id="contact" class="contact">
+                    <div class="contact-container wrapper">
+                        <div class="contact-flex">
+                            <!-- <figure class="mugshot-2">
+                                <img src="https://placekeanu.com/200/150" alt="">
+                            </figure> -->
+                            <div class="contact-me">
+                                <h2>Contact Me</h2>
+                                <a href="andreweichinger21@gmail.com">andreweichinger21@gmail.com</a>
+                                <ul>
+                                    <li class="linked">
+                                        <a href="https://www.linkedin.com/in/andreweichinger/"><i class="fab fa-linkedin-in" title="Linkedin icon and link"></i></a>
+                                    </li>
+                                    <li class="git">
+                                        <a href="https://github.com/andreweich"><i class="fab fa-github" title="GitHub icon and link"></i></a>
+                                    </li>
+                                    <li class="tweet">
+                                        <a href="https://twitter.com/andreweichinger"><i class="fab fa-twitter" title="Twitter icon and link"></i></a>
+                                    </li>
+                                    <li class="mail">
+                                        <a href=""><i class="far fa-envelope" title="Email icon and link"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="contact-me">
-                            <h2>Contact Me</h2>
-                            <a href="andreweichinger21@gmail.com">andreweichinger21@gmail.com</a>
-                            <ul>
-                                <li class="linked">
-                                    <a href="https://www.linkedin.com/in/andreweichinger/"><i class="fab fa-linkedin-in"
-                                            title="Linkedin icon and link"></i></a>
-                                </li>
-                                <li class="git">
-                                    <a href="https://github.com/andreweich"><i class="fab fa-github" title="Github icon and link"></i></a>
-                                </li>
-                                <li class="tweet">
-                                    <a href="https://twitter.com/andreweichinger"><i class="fab fa-twitter" title="Twitter icon and link"></i></a>
-                                </li>
-                                <li class="mail">
-                                    <a href=""><i class="far fa-envelope" title="Email icon and link"></i></a>
-                                </li>
-                            </ul>
+                        
+                        <div class="form">
+                            <form action="submit" class="contact-form">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" class="name">
+                        
+                                <label for="user-email">Email</label>
+                                <input type="email" name="user-email" id="user-email" class="email">
+                        
+                                <label for="message">How can I help you?</label>
+                                <textarea class="textarea-2" id="message" name="message"></textarea>
+                        
+                                <button type="submit" value="Submit" class="button-2">Submit</button>
+                            </form>
                         </div>
                     </div>
                 </section>
-
             </div>
         </div>
     </main>
+
+    <footer>
+        <p>Designed and Devloped by Andrew Eichinger</p>
+    </footer>
 </body>
 </html>
