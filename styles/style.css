@@ -265,7 +265,11 @@ form {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 3rem;
 }
 
 ul {
@@ -288,11 +292,15 @@ h3 {
   font-family: "Helvetica Neue", sans-serif;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .head-container {
   background: #171717;
   border: 8px solid white;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 header {
@@ -322,7 +330,8 @@ header {
   margin-top: 120px;
 }
 
-.socials ul {
+.socials ul,
+.contact ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,41 +340,29 @@ header {
   margin-top: 20px;
   font-size: 2.5rem;
 }
-
-.linked {
-  background: #ee352e;
+.socials ul li,
+.contact ul li {
   width: 50px;
   height: 50px;
   line-height: 50px;
   border-radius: 50%;
   text-align: center;
+}
+
+.linked {
+  background: #ee352e;
 }
 
 .tweet {
   background: #00933c;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50%;
-  text-align: center;
 }
 
 .git {
   background: #0039a6;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50%;
-  text-align: center;
 }
 
 .mail {
   background: #00add0;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 50%;
-  text-align: center;
 }
 
 .scroll {
@@ -386,8 +383,6 @@ header {
   line-height: 60px;
   border-radius: 50%;
   margin: 0 auto;
-  -webkit-box-shadow: 0 0 0 0 black;
-          box-shadow: 0 0 0 0 black;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-animation: pulse 1s infinite;
@@ -462,7 +457,7 @@ header {
   padding-bottom: 3px;
 }
 .navbar li:hover, .navbar li:focus-within {
-  border-bottom: 2px solid #ff6319;
+  border-bottom: 2px solid #00add0;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -498,7 +493,6 @@ header {
   width: 50%;
   line-height: 1.5;
   margin: 20px;
-  padding-bottom: 200px;
 }
 .about-me h2 {
   margin-bottom: 20px;
@@ -573,7 +567,7 @@ header {
   background: #0039a6;
 }
 
-.git-hub {
+.github {
   background: #6cbe45;
 }
 
@@ -595,6 +589,47 @@ header {
   grid-template-rows: 500px 500px 500px;
 }
 
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 40px;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.links a {
+  width: 125px;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Helvetica Neue", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #808183;
+}
+.links a:hover, .links a :focus-within {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
 .display {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,21 +640,81 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 10px;
+  background: #808183;
 }
 .display div {
-  width: 65%;
-  border: 5px solid #fff;
+  width: 80%;
+  border: 8px solid white;
   border-radius: 10px;
+  line-height: 0.75;
 }
 
-.screen-1 {
-  background: #00add0;
+.display:hover,
+.display:focus-within {
+  opacity: 1;
 }
 
-.screen-2 {
+.description ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.5rem;
+}
+.description ul li {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.html-2 {
   background: #ee352e;
 }
 
-.screen-3 {
+.sass-2 {
   background: #0039a6;
+}
+
+.css-2 {
+  background: #00add0;
+}
+
+.react-2 {
+  background: #808183;
+}
+
+.firebase-2 {
+  background: #996633;
+}
+
+.js-2 {
+  background: #b933ad;
+}
+
+.mobile {
+  background: #ff6319;
+}
+
+.github-2 {
+  background: #6cbe45;
+}
+
+.contact-container {
+  margin-top: 150px;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact ul li {
+  margin: 20px;
 }

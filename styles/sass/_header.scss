@@ -1,8 +1,8 @@
 .head-container {
     background: lighten($black, 2%);
-    border: 8px solid lighten(#fff, 2%);
+    border: $border;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 header {
@@ -26,48 +26,37 @@ header {
     margin-top: 120px;
 }
 
-.socials ul {
+.socials ul,
+.contact ul {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
     font-size: 2.5rem;
+
+    li {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        text-align: center;
+    }
 }
 
 
 .linked {
     background: $red;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    text-align: center;
 }
 
 .tweet {
     background: $green;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    text-align: center;
 }
 
 .git {
     background: $blue;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    text-align: center;
 }
 
 .mail {
     background: $light-blue;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    text-align: center;
 }
 
 .scroll {
@@ -86,7 +75,6 @@ header {
     line-height: 60px;
     border-radius: 50%;
     margin: 0 auto;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 	transform: scale(1);
 	animation: pulse 1s infinite;
 }

@@ -2,7 +2,7 @@
     margin-top: 100px;
     background: lighten($black, 2%);
     border-radius: 10px;
-    border: 8px solid lighten(#fff, 2%);
+    border: $border;
 }
 
 
@@ -20,11 +20,13 @@
         padding-bottom: 3px;
         &:hover,
         &:focus-within {
-            border-bottom: 2px solid $orange;
+            border-bottom: 2px solid $light-blue;
             transition: all 0.2s ease-in;
         } 
     } 
 }
+
+// About me section 
 
 .about-container {
     display: flex;
@@ -53,12 +55,13 @@
     width: 50%;
     line-height: 1.5;
     margin: 20px;
-    padding-bottom: 200px;
 
     h2 {
         margin-bottom: 20px;
     }
 }
+
+// Skills section
 
 .skills {
     padding-top: 40px;
@@ -119,13 +122,15 @@
     background: $blue;
 }
 
-.git-hub {
+.github {
     background: $lime;
 }
 
 .firebase {
     background: $brown;
 }
+
+// Work section
 
 .work {
     padding-top: 150px;
@@ -141,31 +146,120 @@
     grid-template-rows: 500px 500px 500px;
 }
 
-// .description {
-//     background: $dark-grey;
-// }
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 40px;
+}
+
+.links {
+    display: flex;
+}
+
+.links a {
+    width: 125px;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-family: "Helvetica Neue", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    transition: all 0.2s ease-in-out;
+    background: $dark-grey;
+
+    &:hover, 
+    & :focus-within {
+        transform: scale(0.9);
+    }
+}
 
 .display{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    background: $dark-grey;
+    
 
     div {
-        width: 65%;
-        border: 5px solid #fff;
+        width: 80%;
+        border: $border;
         border-radius: 10px;
+        line-height: 0.75;
     }
 }
 
-
-.screen-1 {
-    background: $light-blue;
+.display:hover, 
+.display:focus-within {
+    opacity: 1;
 }
 
-.screen-2 {
+
+.description ul{
+    display: flex;
+    // justify-content: space-between;
+    font-size: 2.5rem;
+    
+    li {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 15px;
+    }
+}
+
+.html-2 {
     background: $red;
 }
 
-.screen-3 {
+.sass-2 {
     background: $blue;
+}
+
+.css-2 {
+    background: $light-blue;
+}
+
+.react-2 {
+    background: $dark-grey;
+}
+
+.firebase-2 {
+    background: $brown;
+}
+
+.js-2 {
+    background: $purple;
+}
+
+.mobile {
+    background: $orange;
+}
+
+.github-2 {
+    background: $lime;
+}
+
+// Contact Styles
+
+.contact-container {
+    margin-top: 150px;
+}
+
+.contact h2 {
+    text-align: center;
+}
+.contact ul {
+    justify-content: center;
+    
+    li {
+        margin: 20px;
+    }
 }
