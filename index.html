@@ -39,9 +39,7 @@
                         </div>
                     </div>
                     <div class="scroll">
-                        <button>
-                            <i class="fas fa-arrow-down" title="Down arrow"></i>
-                        </button>
+                        <a href="#main-container"><i class="fas fa-arrow-down" title="Down arrow"></i></a>
                     </div>
                 </div>
             </header>
@@ -53,9 +51,13 @@
     <main>
             
         <div class="wrapper">
-            <div class="main-container">
+            <div id="main-container" class="main-container">
                 <nav>
-                    <ul class="navbar">
+                    <div id="hamburger" class="hamburger">
+                        <!-- <i class="fas fa-hamburger" title="Mobile menu"></i> -->
+                        <i class="fas fa-bars" title="Mobile menu"></i>
+                    </div>
+                    <ul class="navbar" id="navbar">
                         <li>
                             <h3>About</h3>
                             <a href="#about"><i class="far fa-play-circle" title="Play button icon"></i></a>
@@ -247,5 +249,8 @@
     <footer>
         <p>Created and Devloped by Andrew Eichinger</p>
     </footer>
+
+
+    <script src="./script.js"></script>
 </body>
 </html>

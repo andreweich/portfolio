@@ -237,6 +237,7 @@ html {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -379,8 +380,9 @@ header {
   display: flex;
 }
 
-.scroll button {
+.scroll a {
   text-decoration: none;
+  text-align: center;
   border: none;
   color: #fff;
   font-size: 3rem;
@@ -445,6 +447,21 @@ header {
   border: 8px solid white;
 }
 
+.hamburger {
+  display: none;
+  font-size: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.hamburger i {
+  padding-top: 50px;
+}
+.hamburger i:hover, .hamburger i:focus-within {
+  color: #00add0;
+}
+
 .navbar {
   padding-top: 100px;
   display: -webkit-box;
@@ -456,8 +473,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 3rem;
   font-weight: 700;
@@ -509,7 +524,7 @@ header {
   right: 1;
   bottom: 1;
   left: 1;
-  inset: -10px;
+  inset: -5px;
   border-radius: 10px;
   background: #00add0;
   -webkit-transition: -webkit-transform 0.3s ease;
@@ -531,7 +546,7 @@ header {
 }
 
 .mugshot {
-  width: 35%;
+  width: 30%;
   margin: 30px;
   border: 8px solid #00add0;
   border-radius: 10px;
@@ -941,7 +956,7 @@ footer {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .scroll button {
+  .scroll a {
     margin: 0;
   }
 }
@@ -964,6 +979,69 @@ footer {
   }
 
   h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+
+  .scroll a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 2.5rem;
+  }
+
+  .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar li h3 {
+    font-size: 2rem;
+  }
+
+  .navbar li i {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+  }
+
+  .open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 40px;
+    font-size: 2rem;
+  }
+
+  .mugshot {
+    width: 70%;
+  }
+
+  .skills, .work {
+    padding-top: 70px;
+  }
+
+  .work h2 {
+    padding-bottom: 0;
+  }
+
+  .links a {
+    margin: 0 10px;
+  }
+
+  .display {
+    width: 100%;
+    height: 400px;
+  }
+
+  .contact-container {
+    padding-top: 70px;
   }
 }
