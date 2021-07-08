@@ -688,6 +688,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .links a {
@@ -810,12 +812,6 @@ header {
           justify-content: center;
 }
 
-.mugshot-2 {
-  margin: 20px;
-  border: 8px solid #00add0;
-  border-radius: 10px;
-}
-
 .contact-me {
   margin-top: 20px;
 }
@@ -899,8 +895,9 @@ footer {
   }
 
   .projects {
-    grid-template-columns: 1fr;
-    grid-template-rows: 500px 500px 500px 500px 500px 500px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-rows: repeat(6, 0.5fr);
+    gap: 3rem;
     grid-template-areas: "one" "two" "three" "four" "five" "six";
   }
 
@@ -929,15 +926,25 @@ footer {
   }
 
   .description {
+    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 0;
   }
-  .description p {
-    width: 80%;
+  .description h3, .description p, .description ul {
+    padding-bottom: 30px;
+    width: 90%;
+  }
+  .description h3 li, .description p li, .description ul li {
+    margin-top: 10px;
+  }
+
+  .links a {
+    margin: 20px 10px;
   }
 
   form {
@@ -1032,16 +1039,14 @@ footer {
     padding-bottom: 0;
   }
 
-  .links a {
-    margin: 0 10px;
-  }
-
-  .display {
-    width: 100%;
-    height: 400px;
-  }
-
   .contact-container {
-    padding-top: 70px;
+    padding-top: 30px;
+  }
+
+  .contact-me {
+    width: 90%;
+  }
+  .contact-me .my-email {
+    font-size: 1.5rem;
   }
 }
