@@ -1,0 +1,88 @@
+@media (max-width: 1080px) {
+    .skills-container {
+        width: 86%;
+    }
+
+    .projects {
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 500px 500px 500px 500px 500px;
+    grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six";
+    }
+
+    .one {
+        grid-area: one;
+    }
+    .two {
+        grid-area: two;
+    }
+    .three {
+        grid-area: three;
+    }
+    .four {
+        grid-area: four;
+    }
+    .five {
+        grid-area: five;
+    }
+    .six {
+        grid-area: six;
+    }
+
+    .description {
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            width: 80%;
+        }
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1018px) {
+    .flex-head {
+        justify-content: flex-start;
+    }
+
+    .scroll{
+        justify-content: flex-end;
+
+        button {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 1004px) {
+    .about-container {
+        padding-top: 50px;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .mugshot {
+        width: 50%;
+    }
+}
+
+@media (max-width: 580px) {
+    .flex-head h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+}

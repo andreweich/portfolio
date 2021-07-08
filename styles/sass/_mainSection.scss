@@ -11,43 +11,86 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 3rem;
     font-weight: 700;
+    z-index: 1;
 
     li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         border: 2px solid transparent;
         padding-bottom: 3px;
-        &:hover,
-        &:focus-within {
-            border-bottom: 2px solid $light-blue;
-            transition: all 0.2s ease-in;
-        } 
+        position: relative;
+        
+        h3, a {
+            z-index: 10;
+        }
     } 
+}
+
+.navbar li i {
+    padding-top: 20px;
+    font-size: 4rem;
+}
+
+.navbar li::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.navbar li:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar li::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 1; right: 1; bottom: 1; left: 1;
+    inset: -10px;
+    border-radius: 10px;
+    background: $light-blue;
+    transition: transform 0.3s ease;
 }
 
 // About Me Section 
 
 .about-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 150px;
+    flex-wrap: wrap;
     // height: 90vh;
 }
 
 .mugshot {
-    width: 50%;
-    height: 500px;
-    margin: 20px;
+    width: 35%;
+    // height: 300px;
+    margin: 30px;
     border: 8px solid $light-blue;
     border-radius: 10px;
-    padding: 30px;
+    // padding: 30px;
+
+    img {
+        // width: 90%;
+        filter: grayscale(80%);
+        transition: filter 0.4s ease-in-out;
+    }
+}
+
+.mugshot:hover img {
+    filter: grayscale(40%);
+    cursor: pointer;
 }
 
 .about-me {
     width: 50%;
     line-height: 1.5;
-    margin: 20px;
+    margin: 30px;
 
     h2 {
         margin-bottom: 20px;
@@ -141,8 +184,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 525px 525px 525px;
-    grid-auto-rows: 525px;
+    
 }
+
 
 .description {
     display: flex;
@@ -172,21 +216,19 @@
     background: $dark-grey;
 
     &:hover, 
-    & :focus-within {
+    &:focus-within {
         border: 2px solid #fff;
     }
 }
 
 .display{
-    // width: 90%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    // border-radius: 10px;
-    // background: $dark-grey;
-    margin: 20px;
+    margin: 0 auto;
 
-    figure {
+    img {
         width: 100%;
         border: $border;
         border-radius: 10px;
@@ -203,7 +245,7 @@
 
 .description ul{
     display: flex;
-    // justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 2.5rem;
     
     li {
@@ -275,8 +317,6 @@
 
 .contact-me {
     margin-top: 20px;
-    
-    // padding-left: 250px;
 
     ul {
         justify-content: space-between;
@@ -299,7 +339,7 @@ label {
 
 .name,
 .email {
-    background-color: $black;
+    background: lighten($black, 2%);
     color: #fff;
     margin: 5px;
     height: 50px;
@@ -311,7 +351,7 @@ label {
 }
 
 .textarea-2 {
-    background-color: $black;
+    background: lighten($black, 2%);
     color: #fff;
     resize: none;
     // width: 100%;
