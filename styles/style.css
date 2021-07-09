@@ -366,7 +366,7 @@ header {
   background: #00933c;
 }
 
-.git {
+.howdy {
   background: #0039a6;
 }
 
@@ -569,6 +569,7 @@ header {
   transition: -webkit-filter 0.4s ease-in-out;
   transition: filter 0.4s ease-in-out;
   transition: filter 0.4s ease-in-out, -webkit-filter 0.4s ease-in-out;
+  height: auto;
 }
 
 .mugshot:hover img {
