@@ -586,6 +586,14 @@ header {
   margin-bottom: 30px;
 }
 
+.about-me i {
+  font-size: 2.5rem;
+  padding-left: 20px;
+}
+.about-me i:hover, .about-me i:focus-within {
+  color: #00933c;
+}
+
 .skills {
   padding-top: 150px;
 }
@@ -602,7 +610,7 @@ header {
 }
 
 .skills-container ul {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -665,6 +673,14 @@ header {
 
 .firebase {
   background: #996633;
+}
+
+.git {
+  background: #00933c;
+}
+
+.access {
+  background: #ff6319;
 }
 
 .work {

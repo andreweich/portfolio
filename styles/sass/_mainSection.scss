@@ -119,6 +119,16 @@
     }
 }
 
+.about-me i{
+    font-size: 2.5rem;
+    padding-left: 20px;
+
+    &:hover, 
+    &:focus-within {
+        color: $green;
+    }
+}
+
 // Skills Section
 
 .skills {
@@ -138,7 +148,7 @@
 }
 
 .skills-container ul {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -190,6 +200,14 @@
 
 .firebase {
     background: $brown;
+}
+
+.git {
+    background: $green;
+}
+
+.access {
+    background: $orange;
 }
 
 // Work Section
