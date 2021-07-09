@@ -7,8 +7,6 @@
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-template-rows: repeat(6, 0.5fr);
     gap: 3rem;
-    // align-items: center;
-    // grid-template-rows: auto;
     grid-template-areas: 
         "one"
         "two"
@@ -61,7 +59,6 @@
         width: 100%;
     }
 }
-
 
 @media (max-width: 1018px) {
     .flex-head {
@@ -135,10 +132,6 @@
         width: 70%;
     }
 
-    // p {
-    //     font-size: 1.5rem;
-    // }
-
     .skills, .work {
         padding-top: 70px;
     }
@@ -146,17 +139,6 @@
     .work h2 {
         padding-bottom: 0;
     }
-
-    // .links {
-    //     display: block;
-    // }
-    
-
-    // .display {
-    //     width: 100%;
-    //     margin: 20px;
-    //     // height: 400px;
-    // }
 
     .contact-container {
         padding-top: 30px;
@@ -169,6 +151,4 @@
             font-size: 1.5rem;
         }
     }
-
-    
 }

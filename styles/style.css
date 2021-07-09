@@ -545,6 +545,17 @@ header {
       flex-wrap: wrap;
 }
 
+.about-me p {
+  margin-bottom: 20px;
+}
+
+.sub-head {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
 .mugshot {
   width: 30%;
   margin: 30px;
@@ -567,12 +578,12 @@ header {
 }
 
 .about-me {
-  width: 50%;
+  width: 45%;
   line-height: 1.5;
   margin: 30px;
 }
 .about-me h2 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .skills {
@@ -882,6 +893,10 @@ label {
 }
 .button-2:hover, .button-2 :focus-within {
   border: 2px solid #fff;
+}
+
+.up {
+  padding-bottom: 10px;
 }
 
 footer {

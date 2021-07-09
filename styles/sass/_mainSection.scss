@@ -26,7 +26,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    // flex-wrap: wrap;
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 3rem;
     font-weight: 700;
@@ -79,16 +78,24 @@
     justify-content: center;
     padding-top: 150px;
     flex-wrap: wrap;
-    // height: 90vh;
+}
+
+.about-me p {
+    margin-bottom: 20px;
+}
+
+.sub-head {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .mugshot {
     width: 30%;
-    // height: 300px;
     margin: 30px;
     border: 8px solid $light-blue;
     border-radius: 10px;
-    // padding: 30px;
 
     img {
         filter: grayscale(80%);
@@ -103,12 +110,12 @@
 }
 
 .about-me {
-    width: 50%;
+    width: 45%;
     line-height: 1.5;
     margin: 30px;
 
     h2 {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 }
 
@@ -195,13 +202,13 @@
         padding-bottom: 50px;
     }
 }
+
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 525px 525px 525px;
     
 }
-
 
 .description {
     display: flex;
@@ -257,7 +264,6 @@
 .display:focus-within {
     opacity: 1;
 }
-
 
 .description ul{
     display: flex;
@@ -389,6 +395,10 @@ label {
     & :focus-within {
         border: 2px solid #fff;
     }
+}
+
+.up {
+    padding-bottom: 10px;
 }
 
 footer {
