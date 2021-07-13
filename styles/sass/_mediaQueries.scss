@@ -5,8 +5,8 @@
 
     .projects {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    grid-template-rows: repeat(6, 0.5fr);
-    gap: 3rem;
+    grid-template-rows: repeat(6, 0fr);
+    gap: 4rem;
     grid-template-areas: 
         "one"
         "two"
@@ -57,6 +57,7 @@
 
     form {
         width: 100%;
+        padding: 30px 0;
     }
 }
 
@@ -106,25 +107,41 @@
 
     .hamburger {
         display: flex;
+        position: fixed;
+        top: 0;
+        right: 50px;
+        font-size: 3rem;
     }
 
     .navbar {
         display: none;
+        position: fixed;
+        top: 48px;
+        margin-left: 20px;
+        background: $light-blue;
+        border-radius: 5px;
+        padding: 0 3px;
+        // transition: all 0.3s ease;
     }
 
     .navbar li h3 {
-        font-size: 2rem;
+        font-size: 1.6rem;
+        margin: 3px;
+        cursor: pointer;
     }
 
     .navbar li i {
-        font-size: 2.5rem;
-        padding-bottom: 10px;
+        display: none;
     }
+
+    .navbar li::before {
+    background: none;
+    }
+
 
     .open {
         display: flex;
-        flex-direction: column;
-        padding-top: 40px;
+        padding-top: 5px;
         font-size: 2rem;
     }
 
@@ -137,7 +154,7 @@
     }
 
     .work h2 {
-        padding-bottom: 0;
+        padding-bottom: 30px;
     }
 
     .contact-container {
@@ -151,4 +168,46 @@
             font-size: 1.5rem;
         }
     }
+
+    .contact-me p {
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .contact-me ul {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .navbar {
+        margin-left: 5px;
+    }
+
+    .hamburger {
+        right: 30px;
+    }
+
+    .skills-container ul {
+        font-size: 4rem;
+    
+        li {
+            margin: 20px;
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    
+
+    // .display {
+    //     height: 200px;
+    // }
 }

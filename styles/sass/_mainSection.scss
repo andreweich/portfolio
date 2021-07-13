@@ -94,13 +94,18 @@
 .mugshot {
     width: 30%;
     margin: 30px;
-    border: 8px solid $light-blue;
-    border-radius: 10px;
+
+    figure {
+        border: 8px solid $light-blue;
+        border-radius: 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
 
     img {
         filter: grayscale(80%);
         transition: filter 0.4s ease-in-out;
-        height: auto;
+        
     }
 }
 
@@ -119,14 +124,16 @@
     }
 }
 
-.about-me i {
-    font-size: 2.5rem;
-    padding-left: 20px;
-
+.about-me a {
     &:hover, 
     &:focus-within {
         color: $green;
     }
+}
+
+.about-me i {
+    font-size: 2.5rem;
+    padding-left: 20px;
 }
 
 // Skills Section
@@ -350,10 +357,20 @@
 
 .contact-me {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    ul {
-        justify-content: space-between;
+    p {
+        width: 60%;
+        margin-bottom: 40px;
+        text-align: center;
     }
+}
+
+.contact-me ul {
+    width: 60%;
+    align-items: space-between;
 }
 
 // Form Styles
