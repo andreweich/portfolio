@@ -699,7 +699,7 @@ header {
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 525px 525px 525px;
+  grid-template-rows: 525px 525px 525px 525px;
 }
 
 .description {
@@ -949,9 +949,9 @@ footer {
 
   .projects {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    grid-template-rows: repeat(6, 0fr);
+    grid-template-rows: repeat(8, 0fr);
     gap: 4rem;
-    grid-template-areas: "one" "two" "three" "four" "five" "six";
+    grid-template-areas: "seven" "eight" "one" "two" "three" "four" "five" "six";
   }
 
   .one {
@@ -976,6 +976,14 @@ footer {
 
   .six {
     grid-area: six;
+  }
+
+  .seven {
+    grid-area: seven;
+  }
+
+  .eight {
+    grid-area: eight;
   }
 
   .description {
