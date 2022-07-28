@@ -95,6 +95,9 @@
     .mugshot {
         width: 50%;
     }
+    .split {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 580px) {

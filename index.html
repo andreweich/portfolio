@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sass/style.css">
     <script src="https://kit.fontawesome.com/2c4efad1e7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
 </head>
@@ -86,11 +86,11 @@
                         </div>
                         <div class="about-me">
                             <h2>About Me</h2>
-                            <p class="sub-head"> <em>I'm Andrew, a touring musician/songwriter turned front-end web developer based out of Toronto.</em></p>
+                            <p class="sub-head"> <em>I'm Andrew, a front-end web developer and former touring musician based out of Toronto.</em></p>
                             <p>With a background driven by creativity, I am passionate about building clean, engaging and accessible applications with an emphasis on user experience.</p>
-                            <p>I love experimenting with CSS to create responsive mock-ups or bringing my own designs to life leveraging unique functionality with JavaScript and React.</p>
-                            <a href="./assets/AndrewEichinger-Resume.pdf" download="resume">
-                                <p>Download my resume! <i class="far fa-file" title="File icon"></i></p>
+                            <p>I love experimenting with CSS to create responsive websites based on mockups or bringing custom designs to life leveraging unique functionality with JavaScript and React.</p>
+                            <a href="./assets/Andrew-Eichinger-resume.pdf" download="resume" target="_blank">
+                                <p>Download my resume <i class="far fa-file" title="File icon"></i></p>
                             </a>
                         </div>
                     </div>
@@ -140,96 +140,121 @@
 
                 <section id="work" class="work">
                     <h2> Work </h2>
-                    <div class="projects wrapper">
-                        <div class="display seven">
-                            <a href="https://www.haltonhoisting.com/">
-                                <img src="./assets/Screen Shot 2021-09-02 at 6.00.30 PM.png"
-                                    alt="Screen grab from the Halton Hoisting Ltd webpage.">
-                            </a>
-                        </div>
-                        <div class="description eight">
-                            <h3>Halton Hoisting Ltd.</h3>
-                            <p>Freelance work for a construction elevator company based out of Burlington called Halton Hoisting Ltd. I designed
-                                and developed the website under a tight deadline as their previous host contract was about to end. </p>
-                            <ul>
-                                <li class="html-2"><i class="devicon-html5-plain" title="HTML5"></i></li>
-                                <li class="css-2"><i class="devicon-css3-plain" title="CSS3"></i></li>
-                                <li class="js-2"><i class="devicon-javascript-plain" title="JavaScript"></i></li>
-                                <li class="github-2"><i class="devicon-github-original" title="GitHub"></i></li>
-                                <li class="mobile"><i class="fas fa-mobile-alt" title="Responsive"></i></li>
-                            </ul>
-                            <div class="links">
-                                <a href="https://www.haltonhoisting.com/">Live</a>
-                                <a href="https://github.com/andreweich/halton-hoisting">Github</a>
+                    <div class= "wrapper">
+                        <div class="q4-container">
+                            <h3>Q4 Inc.</h3>
+                            <div class="q4-flex">
+                                <div class="split">
+                                    <div>
+                                        <a href="https://news.vizio.com/reviewer-portal/default.aspx" target="_blank">
+                                            <img src="./assets/vizio.png" alt="Screen grab from Vizio newsroom website">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://news.vizio.com/reviewer-portal/default.aspx" target="_blank">
+                                            <img src="./assets/vizio-2.png" alt="Screen grab from Vizio newsroom website">    
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://news.vizio.com/reviewer-portal/default.aspx" target="_blank">
+                                            <img src="./assets/vizio-1.png" alt="Screen grab from Vizio newsroom website">    
+                                        </a>
+                                    </div>
+                                </div>
+                                <p>Built and updated investor relations websites for various clients using SCSS to style templates based on figma designs and HTML, jQuery, Javascript to build modules for custom projects
+                                <div class="split">
+                                    <div>
+                                        <a href="https://investors.aircommunities.com/overview/default.aspx" target="_blank">
+                                            <img src="./assets/air.png" alt="Screen grab from Air Communites investor relations website">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://investors.aircommunities.com/overview/default.aspx" target="_blank">
+                                            <img src="./assets/air-1.png" alt="Screen grab from Air Communites investor relations website">
+                                        </a>
+                                    </div>
+                                </div>
+                                <p>Worked with widgets powered by public and private CMS content API's to render collections of financial data, documents and content using Javascript templating engines</p>
+                                <div class="split">
+                                    <div>
+                                        <img src="./assets/malibu-1.png" alt="Screen grab from Malibu Boats investor relations website">
+                                    </div>
+                                    <div>
+                                        <img src="./assets/malibu.png" alt="Screen grab from Malibu Boats investor relations website">
+                                    </div>
+                                </div> 
+                                <p>Collaboration with other developers to optimize templates and widgets</p>
                             </div>
                         </div>
-                        <div class="description two">
-                            <h3>Daily Crypto Updates</h3>
-                            <p>Search for your favourite cryptocurrency to see if you're making big bucks today, or losing it all like I am! If you just want to browse, simply enter a letter or two and our drop-down menu will provide you with a list of coin suggestions. Pair programmed.</p>
-                            <ul>
-                                <li class="html-2"><i class="devicon-html5-plain" title="HTML5"></i></li>
-                                <li class="css-2"><i class="devicon-css3-plain" title="CSS3"></i></li>
-                                <li class="sass-2"><i class="devicon-sass-original" title="Sass"></i></li>
-                                <li class="js-2"><i class="devicon-javascript-plain" title="JavaScript"></i></li>
-                                <li class="github-2"><i class="devicon-github-original" title="GitHub"></i></li>
-                                <li class="mobile"><i class="fas fa-mobile-alt" title="Responsive"></i></li>
-                            </ul>
-                            <div class="links">
-                                <a href="https://daily-crypto-updates.netlify.app/">Live</a>
-                                <a href="https://github.com/andrew-ashwin-project2/crypto">Github</a>
+
+                        <h2>Projects</h2>
+                        <div class="projects">
+                            <div class="display seven">
+                                <a href="https://www.haltonhoisting.com/" target="_blank">
+                                    <img src="./assets/Screen Shot 2021-09-02 at 6.00.30 PM.png"
+                                        alt="Screen grab from the Halton Hoisting Ltd webpage.">
+                                </a>
                             </div>
-                        </div>
-                        <div class="display one">
-                            <a href="https://daily-crypto-updates.netlify.app/">
-                                <img src="./assets/crypto.png" alt="Screen grab from Daily Crypto Updates">
-                            </a>
-                        </div>
-                    
-                        <div class="display three">
-                            <a href="https://youthful-hodgkin-b1fe8f.netlify.app/">
-                                <img src="./assets/book-2.png" alt="Screen grab from Is The Book Better?.">
-                            </a>
-                        </div>
-                        <div class="description four">
-                            <h3>Is The Book Better?</h3>
-                            <p>Don't you hate it when you leave a movie and your buddy says, "Well, the book was better." Now you can definitively know! In this client based project, our group set out to compare movies to their original book. Using the Google Books and The Movie Database APIs, we compile and display information on each to reveal a winner based on their ratings.</p>
-                            <ul>
-                                <li class="html-2"><i class="devicon-html5-plain" title="HTML5"></i></li>
-                                <li class="css-2"><i class="devicon-css3-plain" title="CSS3"></i></li>
-                                <li class="react-2"><i class="devicon-react-original" title="React"></i></li>
-                                <li class="js-2"><i class="devicon-javascript-plain" title="JavaScript"></i></li>
-                                <li class="firebase-2"><i class="devicon-firebase-plain" title="Firebase"></i></li>
-                                <li class="github-2"><i class="devicon-github-original" title="GitHub"></i></li>
-                                <li class="mobile"><i class="fas fa-mobile-alt" title="Responsive"></i></li>
-                            </ul>
-                            <div class="links">
-                                <a href="https://youthful-hodgkin-b1fe8f.netlify.app/">Live</a>
-                                <a href="https://github.com/project4moviebook/movie-or-book">Github</a>
+                            <div class="description eight">
+                                <h3>Halton Hoisting Ltd.</h3>
+                                <p>Freelance work for a construction elevator company. </p>
+                                <ul>
+                                    <li class="html-2"><i class="devicon-html5-plain" title="HTML5"></i></li>
+                                    <li class="css-2"><i class="devicon-css3-plain" title="CSS3"></i></li>
+                                    <li class="js-2"><i class="devicon-javascript-plain" title="JavaScript"></i></li>
+                                    <!-- <li class="github-2"><i class="devicon-github-original" title="GitHub"></i></li>
+                                    <li class="mobile"><i class="fas fa-mobile-alt" title="Responsive"></i></li> -->
+                                </ul>
+                                <div class="links">
+                                    <a href="https://www.haltonhoisting.com/" target="_blank">Live</a>
+                                    <a href="https://github.com/andreweich/halton-hoisting" target="_blank">Github</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="description six">
-                            <h3>Gift Shop</h3>
-                            <p>When I started making websites, I thought it would be really cool to build my own e-commerce store. So I decided to gather a bunch of my old stuff and set up a little pawn shop. Browse through my dog hair covered items and add them to your cart. Unfortunately, none of them are actually for sale! Currently adding more functionality to my store. </p>
-                            <ul>
-                                <li class="html-2"><i class="devicon-html5-plain" title="HTML5"></i></li>
-                                <li class="css-2"><i class="devicon-css3-plain" title="CSS3"></i></li>
-                                <li class="react-2"><i class="devicon-react-original" title="React"></i></li>
-                                <li class="js-2"><i class="devicon-javascript-plain" title="JavaScript"></i></li>
-                                <li class="firebase-2"><i class="devicon-firebase-plain" title="Firebase"></i></li>
-                                <li class="github-2"><i class="devicon-github-original" title="GitHub"></i></li>
-                                <li class="mobile"><i class="fas fa-mobile-alt" title="Responsive"></i></li>
-                            </ul>
-                            <div class="links">
-                                <a href="https://gift-shop-pawn-shop.netlify.app/">Live</a>
-                                <a href="https://github.com/andreweich/gift-shop">Github</a>
+                            <div class="description two">
+                                <h3>Daily Crypto Updates</h3>
+                                <p>Pair programmed crypto app.</p>
+                                <ul>
+                                    <li class="html-2"><i class="devicon-html5-plain" title="HTML5"></i></li>
+                                    <li class="css-2"><i class="devicon-css3-plain" title="CSS3"></i></li>
+                                    <li class="sass-2"><i class="devicon-sass-original" title="Sass"></i></li>
+                                    <li class="js-2"><i class="devicon-javascript-plain" title="JavaScript"></i></li>
+                                    <!-- <li class="github-2"><i class="devicon-github-original" title="GitHub"></i></li>
+                                    <li class="mobile"><i class="fas fa-mobile-alt" title="Responsive"></i></li> -->
+                                </ul>
+                                <div class="links">
+                                    <a href="https://daily-crypto-updates.netlify.app/" target="_blank">Live</a>
+                                    <a href="https://github.com/andrew-ashwin-project2/crypto" target="_blank">Github</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="display five">
-                            <a href="https://gift-shop-pawn-shop.netlify.app/">
-                                <img src="./assets/gift.png" alt="Screen grab from gift shop.">
-                            </a>
-                        </div>
+                            <div class="display one">
+                                <a href="https://daily-crypto-updates.netlify.app/" target="_blank">
+                                    <img src="./assets/crypto.png" alt="Screen grab from Daily Crypto Updates">
+                                </a>
+                            </div>
                         
+                            <div class="display three">
+                                <a href="https://youthful-hodgkin-b1fe8f.netlify.app/" target="_blank">
+                                    <img src="./assets/book-2.png" alt="Screen grab from Is The Book Better?.">
+                                </a>
+                            </div>
+                            <div class="description four">
+                                <h3>Is The Book Better?</h3>
+                                <p>Group project using the Google Books and Movie Database APIs to compare movies and their books.</p>
+                                <ul>
+                                    <li class="html-2"><i class="devicon-html5-plain" title="HTML5"></i></li>
+                                    <li class="css-2"><i class="devicon-css3-plain" title="CSS3"></i></li>
+                                    <li class="react-2"><i class="devicon-react-original" title="React"></i></li>
+                                    <li class="js-2"><i class="devicon-javascript-plain" title="JavaScript"></i></li>
+                                    <li class="firebase-2"><i class="devicon-firebase-plain" title="Firebase"></i></li>
+                                    <!-- <li class="github-2"><i class="devicon-github-original" title="GitHub"></i></li>
+                                    <li class="mobile"><i class="fas fa-mobile-alt" title="Responsive"></i></li> -->
+                                </ul>
+                                <div class="links">
+                                    <a href="https://youthful-hodgkin-b1fe8f.netlify.app/" target="_blank">Live</a>
+                                    <a href="https://github.com/project4moviebook/movie-or-book" target="_blank">Github</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -246,16 +271,16 @@
                                 </div>
                                 <ul>
                                     <li class="linked">
-                                        <a href="https://www.linkedin.com/in/andreweichinger/"><i class="fab fa-linkedin-in" title="Linkedin icon and link"></i></a>
+                                        <a href="https://www.linkedin.com/in/andreweichinger/" target="_blank"><i class="fab fa-linkedin-in" title="Linkedin icon and link"></i></a>
                                     </li>
                                     <li class="howdy">
-                                        <a href="https://github.com/andreweich"><i class="fab fa-github" title="GitHub icon and link"></i></a>
+                                        <a href="https://github.com/andreweich" target="_blank"><i class="fab fa-github" title="GitHub icon and link"></i></a>
                                     </li>
                                     <li class="tweet">
-                                        <a href="https://twitter.com/andreweichinger"><i class="fab fa-twitter" title="Twitter icon and link"></i></a>
+                                        <a href="https://twitter.com/andreweichinger" target="_blank"><i class="fab fa-twitter" title="Twitter icon and link"></i></a>
                                     </li>
                                     <li class="mail">
-                                        <a href="mailto:andreweichinger21@gmail.com"><i class="far fa-envelope" title="Email icon and link"></i></a>
+                                        <a href="mailto:andreweichinger21@gmail.com" target="_blank"><i class="far fa-envelope" title="Email icon and link"></i></a>
                                     </li>
                                 </ul>
                             </div>

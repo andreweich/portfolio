@@ -231,15 +231,42 @@
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 525px 525px 525px 525px;
-    
+    gap: 40px;
 }
-
+.q4-container {
+    padding-bottom: 70px;
+    h3 {
+        padding-bottom: 30px;
+    }
+    .q4-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .split {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        div {
+            border: 8px solid white;
+            border-radius: 10px;
+            overflow: hidden;
+            &:hover img {
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+            img {
+                display: block;
+                transition: transform .3s ease-in-out;
+            }
+        }
+    }
+}
 .description {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 0 40px;
+    justify-content: center;
+    gap: 20px;
 }
 
 .links {
@@ -270,18 +297,19 @@
 }
 
 .display{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    overflow: hidden;
+    border: $border;
+    border-radius: 10px;
+    &:hover img {
+        transform: scale(1.05);
+    }
 
     img {
         width: 100%;
-        border: $border;
-        border-radius: 10px;
-        line-height: 0.75;
+        height: auto;
         margin: 0 auto;
+        display: block;
+        transition: transform .3s ease-in-out;
     }
 }
 
