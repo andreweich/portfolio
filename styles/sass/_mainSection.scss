@@ -246,7 +246,8 @@
     .split {
         display: flex;
         justify-content: center;
-        gap: 40px;
+        gap: 20px;
+        
         div {
             border: 8px solid white;
             border-radius: 10px;
@@ -258,9 +259,11 @@
             img {
                 display: block;
                 transition: transform .3s ease-in-out;
+                height: 100%;
             }
         }
     }
+    
 }
 .description {
     display: flex;
