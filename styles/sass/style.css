@@ -509,15 +509,15 @@ header {
 }
 
 .mugshot {
-  width: 50%;
   margin: 0 auto;
-}
-.mugshot figure {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
   border: 3px solid #00add0;
-  border-radius: 3px;
-  width: 100%;
-  margin: 0 auto;
+  overflow: hidden;
 }
+
 .mugshot img {
   filter: grayscale(80%);
   transition: filter 0.4s ease-in-out;
@@ -530,7 +530,7 @@ header {
 }
 
 .about-me {
-  width: 50%;
+  width: 60%;
   line-height: 1.5;
   margin: 100px auto 0;
 }
@@ -942,9 +942,7 @@ footer {
   .about-me {
     width: 100%;
   }
-  .mugshot {
-    width: 75%;
-  }
+  
   .split {
     flex-direction: column;
   }
